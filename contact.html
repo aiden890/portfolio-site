@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>연락처 — 이름</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">이름</a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav class="site-nav">
+        <a href="/">홈</a>
+        <a href="about.html">소개</a>
+        <a href="contact.html">연락처</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>연락하기</h1>
+    <p>메일로 연락주세요: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>간단한 연락 폼 (백엔드 없음, 클릭 시 메일 클라이언트 열기)</p>
+    <form action="mailto:you@example.com" method="post" enctype="text/plain">
+      <label>이름<br><input type="text" name="name"></label>
+      <label>메시지<br><textarea name="message" rows="6"></textarea></label>
+      <button type="submit" class="btn">보내기</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 이름 — <a href="contact.html">연락하기</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

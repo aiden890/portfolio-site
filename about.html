@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>소개 — 이름</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">이름</a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav class="site-nav">
+        <a href="/">홈</a>
+        <a href="about.html">소개</a>
+        <a href="contact.html">연락처</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>소개</h1>
+    <p>여기에 본인 소개, 기술 스택, 경력 요약 등을 적으세요.</p>
+    <section>
+      <h2>기술</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>React (선택)</li>
+        <li>프론트엔드 개발</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 이름 — <a href="contact.html">연락하기</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
